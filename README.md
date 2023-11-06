@@ -24,8 +24,6 @@ GymPass Style app.
 - [ ] O check-in só pode ser validado por administradores;
 - [ ] A academia só pode ser cadastrada por administradores;
 
-
-
 ## RNFs (Regras não-funcionais)
 
 - [ ] A senha do usuário precisa estar criptografada;
