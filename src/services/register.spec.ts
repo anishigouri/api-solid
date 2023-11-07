@@ -7,11 +7,11 @@ import { UserAlreadyExistsError } from './errors/user-already-exists-error'
 let usersRepository: InMemoryUsersRepository
 let sut: RegisterService
 
-beforeEach(() => {
-  usersRepository = new InMemoryUsersRepository()
-  sut = new RegisterService(usersRepository)
-})
 describe('Register Service', () => {
+  beforeEach(() => {
+    usersRepository = new InMemoryUsersRepository()
+    sut = new RegisterService(usersRepository)
+  })
   it('should be able to register', async () => {
     const { user } = await sut.execute({
       name: 'John Doe',
