@@ -21,8 +21,6 @@ export class AuthenticateService {
   }: AuthenticateServiceRequest): Promise<AuthenticateServiceResponse> {
     const user = await this.usersRepository.findByEmail(email)
 
-    console.log(user)
-
     if (!user) {
       throw new InvalidCredentialsError()
     }
