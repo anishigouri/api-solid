@@ -1,8 +1,6 @@
-import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-check-ins-repository'
-import { beforeEach, describe, expect, it } from 'vitest'
-import { FetchUserCheckInsService } from './fetch-user-check-ins-history'
-import { SearchGymsService } from './search-gyms'
 import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms-repository'
+import { beforeEach, describe, expect, it } from 'vitest'
+import { SearchGymsService } from './search-gyms'
 
 let gymsRepository: InMemoryGymsRepository
 let sut: SearchGymsService
