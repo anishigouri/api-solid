@@ -25,7 +25,7 @@ GymPass Style app.
 - [ ] A academia só pode ser cadastrada por administradores;
 
 ## RNFs (Regras não-funcionais)
-
+1
 - [x] A senha do usuário precisa estar criptografada;
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [x] Todas as listas de dados precisam estar paginadas com 20 itens por página;
