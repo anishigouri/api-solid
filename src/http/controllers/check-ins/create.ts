@@ -17,8 +17,7 @@ export async function create(request: FastifyRequest, reply: FastifyReply) {
   })
 
   const { gymId } = params.parse(request.params)
-  const { latitude, longitude } = schema.parse(request.query)
-
+  const { latitude, longitude } = schema.parse(request.body)
   const service = makeCheckInService()
 
   await service.execute({
